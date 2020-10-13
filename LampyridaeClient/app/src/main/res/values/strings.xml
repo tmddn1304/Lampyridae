@@ -1,0 +1,49 @@
+﻿<resources>
+    <string name="app_name">반딧불이</string>
+
+    <string name="send_timer">30</string>
+
+    <string name="sound_timer">30</string>
+
+    <string name="call_number">01049190787</string>
+
+    <string name="help_message">위급상황입니다.\n연락주세요.</string>
+
+    <string name="server_address">61.99.142.131</string>
+    <string name="server_port">8181</string>
+    <string name="server_message_identifier">client</string>
+
+    <string name="button_action_timer">3</string>
+    <string name="button_action_count">5</string>
+    
+    <string name="saved_data_male">남자</string>
+    <string name="saved_data_female">여자</string>
+
+    <string name="save_data_key_button_action">buttonAction</string>
+    <string name="save_data_key_user_information">userInformation</string>
+    <string name="save_data_key_user_name">userName</string>
+    <string name="save_data_key_user_gender">userGender</string>
+    <string name="save_data_key_user_age">userAge</string>
+    <string name="save_data_key_user_phone">userPhone</string>
+    <string name="save_data_key_sound_timer">soundTimer</string>
+    <string name="save_data_key_send_timer">sendTimer</string>
+    <string name="save_data_key_button_action_count">notificationCount</string>
+    <string name="save_data_key_button_action_timer">notificationSeconds</string>
+
+    <string name="register_send_timer">자동문자전송 대기시간(초)</string>
+    <string name="register_sound_timer">신고후 경고음 지속시간(초)</string>
+    <string name="register_name">이  름</string>
+    <string name="register_male">남 자</string>
+    <string name="register_female">여 자</string>
+    <string name="register_age">나  이</string>
+    <string name="register_phone">추 가 연 락 처</string>
+    <string name="register_confirm">완  료</string>
+    <string name="register_reset">리  셋</string>
+    
+    <string name="dialog_title">동작 선택</string>
+    <string name="dialog_message">초 안에 동작을 선택하지 않으면\n자동으로 신고문자가 전송됩니다.</string>
+    <string name="dialog_action_start">즉시신고</string>
+    <string name="dialog_action_cancel">취소</string>
+
+    <string name="main_menu_title">사용자 정보 불러오기</string>
+</resources>

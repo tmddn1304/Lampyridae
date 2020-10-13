@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hackathon.lampyridaeAdmin.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="반딧불이"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/ivGraph"
+            android:layout_width="36dp"
+            android:layout_height="37dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:onClick="imageClick"
+            app:srcCompat="@drawable/graph" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@color/colorBack"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <!--
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="가로등 번호"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/back"
+                        android:ems="15"
+                        android:hapticFeedbackEnabled="true"
+                        android:hint=" 보안등 위치명, 주소, 전화번호 검색"
+                        android:inputType="textPersonName"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textCursorDrawable="@color/colorPrimary"
+                        android:textIsSelectable="false" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnSearch"
+                    android:layout_width="43dp"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lvList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/listview"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/nfc"
+            android:orientation="horizontal"
+            android:visibility="invisible"></LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
